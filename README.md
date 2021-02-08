@@ -42,8 +42,8 @@ I) Clone the git repo
 
  
    ```
-   git config user.name <github-username>
-   git config user.email <github-email>
+   git config user.name "<your-name>"
+   git config user.email "<github-email>"
    ```
 
 II) Install php and composer
