@@ -70,13 +70,19 @@ II) Install php and composer
 III) Configure environment file
 -------------------------------
 
-1. Setup app name:
+1. Create .env file:
+
+   ```
+   cp .env.example .env
+   ```
+
+2. Setup app name:
 
    ```
    sed -i 's/APP_NAME=.*/APP_NAME=Egora/g' .env
    ```
 
-2. Setup database information:
+3. Setup database information:
 
    ```
    sed -i 's/DB_DATABASE=.*/DB_DATABASE=egora/g' .env
@@ -84,19 +90,19 @@ III) Configure environment file
    sed -i 's/DB_PASSWORD=.*/DB_PASSWORD=egora/g' .env
    ```
 
-3. Force http scheme:
+4. Force http scheme:
 
    ```
    sed -i 's/FORCE_SCHEME=.*/FORCE_SCHEME=http/g' .env
    ```
 
-4. Generate app key:
+5. Generate app key:
 
    ```
    php artisan key:generate
    ```
 
-5. Review your changes:
+6. Review your changes:
 
    ```
    cat .env
